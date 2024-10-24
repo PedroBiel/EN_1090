@@ -34,7 +34,7 @@ class Perforacion:
         """
 
         if d_nom <= 0:
-            raise ValueError(':( d_nom debe ser positivo.')
+            raise ValueError(':( El diámetro del taladro debe ser mayor que cero.')
 
         self.d_nom = d_nom
 
