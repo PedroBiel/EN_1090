@@ -33,6 +33,9 @@ class Perforacion:
         :param d_nom: [mm] Diámetro nominal del perno o bulón.
         """
 
+        if d_nom <= 0:
+            raise ValueError(':( d_nom debe ser positivo.')
+
         self.d_nom = d_nom
 
     def holgura_nominal(self, tipo_agujero: str) -> int:
